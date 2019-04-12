@@ -16,10 +16,9 @@ public class hello {
     public String test(){
         System.out.print("sfdsfdsfds");
 
-        int i=template.selectOne("getUserCount");
+        //int i=template.selectOne("getUserCount");
 
-        System.out.print("------------------"+i);
-        System.out.print("------------------"+i);
+        //System.out.print("------------------"+i);
         return "test11";
 
     }

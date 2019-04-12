@@ -1,4 +1,4 @@
-package com.example.springdemo;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.*"})
+@ComponentScan(basePackages = {"com.example.*"})
 public class SpringdemoApplication extends SpringBootServletInitializer {
 
 	@Override

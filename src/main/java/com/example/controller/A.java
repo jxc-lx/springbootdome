@@ -6,8 +6,10 @@
 package com.example.controller;
 
 
-import java.util.ArrayList;
-import java.util.List;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import java.util.*;
 
 public class A {
 
@@ -22,4 +24,37 @@ public class A {
 
         }
     }
+    @Test
+    public void test(){
+
+        String a=null;
+        String b="123";
+        Assert.assertNull(a);
+        Assert.assertEquals(b,"123");
+
+        List list = new ArrayList();
+        list.add("aaa");
+        list.add("bbb");
+        list.add("ccc");
+        for(Iterator iter = list.iterator(); iter.hasNext();){
+
+            String str = (String) iter.next();
+            System.out.println(str);
+        }
+        Map <String,String>map = new HashMap<String,String>();
+        map.put("name","xiaoming");
+        map.put("Sex","1");
+        map.put("age","18");
+        for (Map.Entry<String,String> entry :map.entrySet()){
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+        String [] arr ={"zzz","xxxxxx"};
+        for (String s:arr) {
+            System.out.println(s);
+        }
+
+    }
+
+
 }
